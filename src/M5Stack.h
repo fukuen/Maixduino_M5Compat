@@ -116,12 +116,9 @@
 
         // Button API
         #define DEBOUNCE_MS 10
-//        Button BtnA = Button(PIN_KEY_UP, true, DEBOUNCE_MS);
-//        Button BtnB = Button(PIN_KEY_PRESS, true, DEBOUNCE_MS);
-//        Button BtnC = Button(PIN_KEY_DOWN, true, DEBOUNCE_MS);
-        Button BtnA = Button(1, true, DEBOUNCE_MS);
-        Button BtnB = Button(2, true, DEBOUNCE_MS);
-        Button BtnC = Button(3, true, DEBOUNCE_MS);
+        Button BtnA = Button(PIN_KEY_UP, true, DEBOUNCE_MS);
+        Button BtnB = Button(PIN_KEY_PRESS, true, DEBOUNCE_MS);
+        Button BtnC = Button(PIN_KEY_DOWN, true, DEBOUNCE_MS);
 
         // SPEAKER
         SPEAKER Speaker;

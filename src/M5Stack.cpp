@@ -24,7 +24,6 @@ void M5Stack::begin(bool LCDEnable, bool SDEnable, bool SerialEnable, bool I2CEn
 
   // LCD INIT
   if (LCDEnable == true) {
-//    Lcd.begin();
     Lcd.begin();
   }
 

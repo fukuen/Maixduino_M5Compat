@@ -27,10 +27,10 @@ void SPEAKER::begin() {
   uarths_init();
   // io_mux_init
   fpioa_set_function(I2S_DA, FUNC_I2S0_OUT_D1);
-	fpioa_set_function(I2S_WS, FUNC_I2S0_WS);	
+  fpioa_set_function(I2S_WS, FUNC_I2S0_WS);	
   fpioa_set_function(I2S_BCK, FUNC_I2S0_SCLK);
   i2s_init(I2S_DEVICE_0, I2S_TRANSMITTER, 0x0C);
-  // for NewMaixGo
+  // Power Amp enable for NewMaixGo = pin 32 / Maixduino = pin 2
   fpioa_set_function(32, FUNC_GPIO1);
   gpio_set_drive_mode(1, GPIO_DM_OUTPUT);
   gpio_set_pin(1, GPIO_PV_HIGH);
